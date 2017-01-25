@@ -1,14 +1,18 @@
-#namebarcircle.row {
+/*#namebarcircle.row {
 	text-align: center;
-}
+}*/
+
+
 div#name-bar.large-12.medium-12.small-12.columns {
-	font-size: 6em;
+	font-family: syncopate, sans-serif;
+	font-size: 6rem;
 	color:white;
 	background-color: black;
 	height:13rem;
 	padding-top: 1rem;
 	position: fixed;
 	text-align: center;
+	letter-spacing: 18px;
 }
 
 /*div#circledname.row {
@@ -27,16 +31,30 @@ div#name-bar.large-12.medium-12.small-12.columns {
     border-radius: 50%;
 }*/
 #mainsection {
-	height: 44.35rem;
+	height: 47.35rem;
 	background-color: orange;
 	padding-top: 14rem;
 	font-size: 3rem;
 	text-align: center;
 	clear:both;
+	font-family: marvel, sans-serif;
 }
 
-div#mainsection-title {
+div#mainsection-title {/*
+    padding-left: 26rem;*/
+    width: 69rem;
 	padding-top: 10rem;
+}
+
+#dev-title {
+	border-top: solid white 2px;
+	border-bottom: solid white 2px;
+	width: 50em;
+	text-align: center;
+    margin-left: 19em;
+    padding-top: 2em;
+    padding-bottom: 2rem;
+  /* font-family: syncopate, sans-serif;*/
 }
 
 /*
@@ -91,8 +109,8 @@ div#box4.small-3.medium-3.large-3.columns.tiles {
     width:50%;
     height: 31.25rem;
     background: red;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;  /*Safari */
-    transition: width 2s, height 2s, transform 2s;
+  /*  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;  /*Safari */
+    /*transition: width 2s, height 2s, transform 2s;*/
 }
 
 div#box1.small-3.medium-3.large-3.columns.tiles:hover, 
@@ -101,8 +119,8 @@ div#box3.small-3.medium-3.large-3.columns.tiles:hover,
 div#box4.small-3.medium-3.large-3.columns.tiles:hover {
     width:50%;
     height: 30rem;
-    -webkit-transform: rotate(360deg); /* Safari */
-    transform: rotate(360deg);
+    /*-webkit-transform: rotate(360deg); *//* Safari */
+    /*transform: rotate(360deg);*/
 }
 
 /*
@@ -119,7 +137,7 @@ QUOTE
 PROJECTS
 ***********************************************************************************************/
 div#projects.large-12.medium-12.small-12.columns {
-	height: 31.2rem;
+	height: 39rem;
 	background-color: red;
 }
 
@@ -127,8 +145,12 @@ div#projects.large-12.medium-12.small-12.columns {
 WORKING ON
 ***********************************************************************************************/
 #workingon {
-	height: 20rem;
+	padding-top: 5rem;
+	height: 14rem;
 	background-color: gray;
+	color:white;
+	text-align: center;
+	font-size: 33px;
 }
 
 
@@ -137,21 +159,45 @@ FOOTER
 ***********************************************************************************************/
 footer {
 	height: 20rem;
-	background-color: pink;
+	background-color: black;
+}
+div.footer-row {
+	    margin-top: -3rem;
 }
 
 
 .box {
-    transform: translateY(32%) rotate(225deg);
+    transform: translateY(31%) rotate(225deg);
     margin: 0 auto;
     width: 60px;
     height: 60px;
 }
-.background-green {
-    background-color: #47da9f;
+
+.box2 {
+    transform: translateY(31%) rotate(225deg);
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+}
+.background-arrows{
+    background-color: black;
 }
 
-.arrow-trigger {
+.background-arrows2 {
+    background-color: black;
+}
+
+
+.arrow-trigger, .arrow-trigger2{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+/*
+ {
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -160,7 +206,7 @@ footer {
     cursor: pointer;
 }
 
-
+*/
 
 .arrow {
     position: absolute;
@@ -168,12 +214,33 @@ footer {
     bottom: 10px;
     width: 40px;
     height: 40px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-top: 8px double #fff;
+    border-left: 8px double #fff;
     animation: arrow 2000ms ease-in-out infinite;
     transform-origin: bottom right;
     cursor: pointer;
     pointer-events: none;
+}
+
+.arrow2 {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-top: 8px double #fff;
+    border-left: 8px double #fff;
+    animation: arrow 2000ms ease-in-out infinite;
+    transform-origin: bottom right;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+div.box2.background-arrows2 {
+	transform: translateY(31%) rotate(405deg);
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
 }
 
 
